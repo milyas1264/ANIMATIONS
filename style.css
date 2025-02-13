@@ -252,14 +252,88 @@
         transform: skew(50deg);
     }
 }
-@keyframes ilyas6{
-    from{
-        background-color: blue;
+/* -----------------animate2--------------------- */
+
+.container2{
+    background-color: blue;
+    border: 5px inset gold;
+    height: 600px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: azure;
+    
+}
+
+.box{
+    width: 150px;
+    height: 150px;
+    border: 10px inset yellow;
+    text-align: center;
+    align-content: center;
+    background-color: crimson;
+    animation: abc 2s alternate 5 0.5s;  
+}
+.orange{
+    width: 150px;
+    height: 150px;
+    border: 10px outset gold;
+    text-align: center;
+    align-content: center;
+    background-color: navy;
+    animation: abcd 2s alternate-reverse 5 0.5s;  
+}
+.green{
+    width: 150px;
+    height: 150px;
+    border: 10px outset whitesmoke;
+    text-align: center;
+    align-content: center;
+    background-color: greenyellow;
+    color: red;
+    animation: abcdf 2s ease-in-out 5 0.5s;  
+}
+
+@keyframes abc{
+    0%{
+        background-color: aqua;
+    }
+    50%{
+        background-color: darkgrey;
+        transform: scale(2);
+        transform: rotate(180deg);
+    }
+    100%{
+        background-color: greenyellow;
+        font-size: 30px;
+        color: red;
+        transform: scale(3);
+        transform: rotate(360deg);
+        border: 10px dashed red;
+        transform: translate(100px, 150px);
+    }
+      
+}
+
+@keyframes abcd{
+    from{background-color: navy;
+
     }
     to{
-        background-color: burlywood;
-        width: 500px;
-        font-size: large;
-        transform: translate(100px, 50px);
+        background-color: gold;
+        transform: scale(2);
+        border: 10px groove red;
+        rotate: 180deg;
+    }
+}
+@keyframes abcdf{
+    from{background-color: navy;
+
+    }
+    to{
+        background-color: gold;
+        transform: scale(3);
+        border: 10px groove red;
+        rotate: 360deg;
     }
 }
