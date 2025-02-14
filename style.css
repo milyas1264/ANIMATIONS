@@ -110,8 +110,8 @@
 }
 /* -----------------Animations------------- */
 .box1a{
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     background-color: blue;
     animation-name: ilyas;
     animation-duration: 0.5s;
@@ -203,9 +203,11 @@
         background-color: blue;
     }
     to{
-        background-color: palevioletred;
-        width: 150px;
-        border-radius: 0 100px 100px 0;
+        background-color: green;
+        border: 5px inset red;
+        
+        
+       
     }
 }
 @keyframes ilyas2{
@@ -237,7 +239,8 @@
     to{
         background-color: grey;
         width: 600px;
-        border-radius: 20px;
+        border: 3px dashed greenyellow;
+        border-radius: 0 20px 20PX 0;
     }
 }
 
